@@ -28,7 +28,8 @@ services:
       - 8000:8000
     volumes:
       - .:/var/www/html
-    command: php artisan serve --host 0.0.0.0
+    command: php artisan key:generate
+    #command: php artisan serve --host 0.0.0.0
 
 volumes:
   laravel_db:
